@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="shop-style.css">
+   <link rel="stylesheet" href="style-SHOP-Nav.css">
+   <link rel="stylesheet" href="/SHOP-page/Shop-footer-style-cstm-stl.css">
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+   integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+   integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link rel="stylesheet" href="/SHOP-page/cstm-Menu_SHOP.css">
+  <title>Metal Wall Decor</title>
+
+</head>
+<body>
+
+  
+<!-- NAV-BAR-STARTS HERE -->
+<nav id="mainnav">
+  <div class="main-home-logo">
+    <div class="home-logo">
+      <a href="/HomePage-Jenson Decor/index.html">
+        <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo-with text.svg" alt="" id="logo-with-text">
+        <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo only.svg" alt="" id="logo-without-text"
+          class="not-active-logo-cstm">
+      </a>
+    </div>
+  </div>
+  <div id="nav-menu-main">
+    <div id="nav-menu" class=" fixed-menu-navbar-custm">
+      <div id="quick-navi-pages">
+        <ul>
+          <li><a href="/Offers_page/offers.html" class="a-flex">Offers</a></li>
+          <li><a href="/Contact/Contact.html" class="a-flex">Contact</a></li>
+          <li><a href="/SHOP-page/shop.html" class="a-flex">Shop</a></li>
+        </ul>
+      </div>
+      <div id="main-menu-container">
+        <div id="menu-container">
+          <div id="hamburger-menu" onclick="menu_open()">
+            <span class="a-flex"><img src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-hamburger.svg" alt="">
+              <h6>Menu</h6>
+            </span>
+          </div>
+
+          <span class="a-flex " onclick="open_cart()"><img
+              src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-cart.svg" alt=""></span>
+
+          <a href="/HomePage-Jenson Decor/login-signup/signin.html" class="a-flex"> <img
+              src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-loginsvg.svg" alt=""></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- NAV-MENU-STARTS HERE -->
+<div id="menu-parent-container">
+
+  <div id="menu-container-cstm">
+    <div class="menu-left-container">
+      <div class="menu-left-child-left">
+        <ul>
+          <h4>Follow Us</h4>
+          <li><a href="https://www.facebook.com/" class="menu-socialmedia-list-stl">Facebook</a></li>
+          <li><a href="https://twitter.com/?lang=en" class="menu-socialmedia-list-stl">Twitter</a></li>
+          <li><a href="https://www.youtube.com/" class="menu-socialmedia-list-stl">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" class="menu-socialmedia-list-stl">Instagram</a></li>
+          <li><a href="https://pk.linkedin.com/" class="menu-socialmedia-list-stl">linkedin</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-left-child-right">
+        <ul>
+          <h4>Search By Category</h4>
+          <li><a href="/SHOP-page/Shop-metal-wall-decor.html" class="menu-category-list-stl">Metal wall
+              art </a></li>
+          <li><a href="/SHOP-page/Shop-wallpaper.html" class="menu-category-list-stl">Wall papers </a>
+          </li>
+          <li><a href="/SHOP-page/Shop-photoframe-art.html" class="menu-category-list-stl">Photo frame art
+            </a></li>
+          <li><a href="/SHOP-page/Shop-MirrorART.html" class="menu-category-list-stl">Mirror art</a></li>
+          <li><a href="/SHOP-page/Shop-Wallshelves.html" class="menu-category-list-stl">Wall shelves </a>
+          </li>
+          <li><a href="/SHOP-page/Shop-Wall-mounted-animals.html" class="menu-category-list-stl">Wall
+              mounted animals </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="menu-right-container">
+      <a href="/HomePage-Jenson Decor/index.html">
+        <h1 id="menu_headings_home">HOME</h1>
+      </a>
+      <a href="/SHOP-page/shop.html">
+        <h1 id="menu_headings_home">SHOP</h1>
+      </a>
+      <a href="/About_Us-PAGE/about.html">
+        <h1 id="menu_headings_home">ABOUT</h1>
+      </a>
+      <a href="/Offers_page/offers.html">
+        <h1 id="menu_headings_home">OFFERS</h1>
+      </a>
+      <a href="/Contact/Contact.html">
+        <h1 id="menu_headings_home">CONTACT</h1>
+      </a>
+      <a href="/ProductCompare/productcomp.html">
+        <h1 id="menu_headings_home">COMPARE PRODUCTS</h1>
+      </a>
+    </div>
+  </div>
+  <span id="menu-close-button" onclick="menu_close()"><img src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg"
+      alt=""></span>
+</div>
+<!-- NAV-CART-END HERE -->
+<div id="cart-parent-container">
+
+
+  <div id="cart-container">
+
+    <span id="cart-close-button" onclick="close_cart()"><img
+        src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+
+    <div id="cart-content">
+      <h2>Your Cart</h2>
+
+      <div id="product-cart-item">
+
+        <span class="product-cart-item-image"><img src="/HomePage-Jenson Decor/Assets/cart-demo-product-image-01.jpg"
+            alt=""></span>
+
+        <div class="product-cart-item-content">
+          <div class="product-cart-item-heading"></div>
+          <div class="product-cart-item-details"></div>
+        </div>
+
+      </div>
+      <h5>Your cart is empty</h5>
+    </div>
+
+
+  </div>
+</div>
+<!-- NAV-BAR-ENDS HERE -->
+
+
+<div class="container mt-5">
+  <h1 style="font-size: 100px;">Metal wall art</h1>
+  <br>
+  <div class="row justify-content-between">
+    <div class="col">
+      <h3 style="font-size: 16px; margin-left: 9px; font-weight: bold;">Categories</h3>
+      <span class="tag selected-tag" >Metal wall art</span>
+      <span class="tag"><a href="/SHOP-page/shop.html">All</a></span>
+      <span class="tag"><a href="/SHOP-page/Shop-wallpaper.html">Wall paper</a></span>
+      <span class="tag"><a href="/SHOP-page/Shop-photoframe-art.html">Photo frame art</a></span>
+      <br>
+      <span class="tag"><a href="/SHOP-page/Shop-MirrorART.html">Mirror art</a></span>
+      <span class="tag"><a href="/SHOP-page/Shop-Wallshelves.html">Wall Shelves</a></span>
+      <span class="tag"><a href="/SHOP-page/Shop-Wall-mounted-animals.html">Wall mounted animals</a></span>
+      <br><br>
+      <span class="tag" id="tag8-arrow" style="font-weight: bold;"><a href="/ProductCompare/productcomp.html">Compare Products <img src="/SHOP-page/Assets/icons-asset-05.svg" class="arrow_icon_custm"></a></span>
+    </div>
+    
+    <div class="col-4" style="display: flex; justify-content: right;">
+      <div class="dropdown" style="position: absolute; top: -120px; right: 0px;">
+        <h1 style="font-size:11px;background-color:#f4f4f4 ;">Search by</h1>
+        <h1 style="font-size:27px;font-weight: bold;">Brands</h1>
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 20px;background-color: #f4f4f4;color:black;border: 1px solid black; box-shadow: none ;">
+          Select brand
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: none;">
+          <!-- Dropdown Items -->
+          <a class="dropdown-item dropdown-list-custm-sty" href="/SHOP-page/Shop-BRAND-WallFusion.html">WallFusion</a>
+          <a class="dropdown-item dropdown-list-custm-sty" href="/SHOP-page/Shop-BRAND-Antvibe.html">AntVibe</a>
+          <a class="dropdown-item dropdown-list-custm-sty" href="/SHOP-page/Shop-BRAND-DecoMasters.html">DecoMasters</a>
+          <a class="dropdown-item dropdown-list-custm-sty" href="/SHOP-page/Shop-BRAND-DecoGenius.html">DecoGenius</a>
+          <a class="dropdown-item dropdown-list-custm-sty" href="/SHOP-page/Shop-BRAND-AntWalls.html">AntWalls</a>
+          <a class="dropdown-item dropdown-list-custm-sty" href="/SHOP-page/Shop-BRAND-Decormosaic.html">DecorMosaic</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<br>
+  <!-- Second row with cards -->
+<div class="row">
+
+   <!-- Geometric Compass -->
+   <div class="col-4">
+
+    <a href="/JensonDecor-Product detail page/Geometric Compass-metalwallart-detailedpage.html">
+      <div class="product-card-container">
+      <img src="/SHOP-page/All products images-SHOP/Geometric Compass-metalwallart-02/81yJdx+uKhL._AC_SL1500_.jpg" alt="">
+      <div class="product-card-content">
+   
+      <div class="product-card-content-left">
+      <h1>Geometric Compass</h1>
+   <p>Matt Black steel wall decor: Lightweight, easy to hang, and modernly chic.</p>
+   </div>
+   <div class="product-card-content-right">
+     <h1>$29.56</h1>
+     <h5> &#9733;&#9733;&#9733;&#9734;&#9734;</h5>
+   </div>
+   </div>
+   
+     </div>
+   </a>
+
+
+  </div>
+
+
+  <!-- Metallic Branch Elegance -->
+  <div class="col-4">
+ 
+    <a href="/JensonDecor-Product detail page/Metallic-Branch Elegance-detailedpage.html">
+      <div class="product-card-container">
+      <img src="/SHOP-page/All products images-SHOP/Metallic Branch Elegance-metal wall art-01/metal-wall-art-01-img1.jpeg" alt="">
+      <div class="product-card-content">
+   
+      <div class="product-card-content-left">
+      <h1>Metallic Branch Elegance</h1>
+   <p>Our metal wall art features nature-inspired branches in contemporary metallic tones.</p>
+   </div>
+   <div class="product-card-content-right">
+     <h1>$34.99</h1>
+     <h5> &#9733;&#9733;&#9733;&#9733;&#9734;</h5>
+   </div>
+   </div>
+   
+     </div>
+   </a>
+
+
+  </div>
+  
+<!--Metal Geometric 3D Stripe -->
+<div class="col-4">
+  
+  <a href="/JensonDecor-Product detail page/Metal Geometric 3D Stripe-metalwallart-detailedpage.html">
+    <div class="product-card-container">
+    <img src="/SHOP-page/All products images-SHOP/Metal Geometric 3D Stripe-metalwallart-03/81rMlK8kNYL._AC_SL1500_.jpg" alt="">
+    <div class="product-card-content">
+ 
+    <div class="product-card-content-left">
+    <h1>Metal Geometric 3D Stripe</h1>
+ <p>Contemporary gold geometric wall decor: sleek, durable, and effortlessly transforms your space.</p>
+ </div>
+ <div class="product-card-content-right">
+   <h1>$18.66</h1>
+   <h5> &#9733;&#9733;&#9733;&#9733;&#9734;</h5>
+ </div>
+ </div>
+ 
+   </div>
+ </a>
+
+
+</div>
+</div>
+
+</div>
+
+  <div class="container mt-5 text-center" style="margin-bottom: 90px;">
+    <!-- <span class="tag" id="tag2"">1</span>
+    <span class="tag" id="tag2"">2</span>
+    <span class="tag" id="tag2"">Next Page</span> -->
+  </div>
+</div>
+
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-9-FOOTER-STARTS HERE -->
+    <div id="section9-footer-parent">
+      <div id="section9-footer-container">
+      
+      
+      <div id="section9-footer-left">
+          <ul id="footer-navigation-menu">
+              <li> <a href="/HomePage-Jenson Decor/index.html" class="section9-footer-left-list-item">Home</a></li>
+              <li> <a href="/SHOP-page/shop.html" class="section9-footer-left-list-item">Shop</a></li>
+              <li> <a href="/Offers_page/offers.html" class="section9-footer-left-list-item">Offers</a></li>
+              <li> <a href="/About_Us-PAGE/about.html" class="section9-footer-left-list-item">About</a></li>
+              <li> <a href="/ProductCompare/productcomp.html" class="section9-footer-left-list-item">Compare Products</a></li>
+          </ul>
+      </div>
+      <div id="section9-footer-center-belowthelogo">
+          <div id="footer-logo-text">
+              <h1 >JensonDecor</h1>
+              <h6>Transforming Spaces, Inspiring Lives</h6>
+          </div>
+          <div id="footer-copyright-container">
+            <h5 id="footer-short-about-and-copyright-animation"> Elevate your space with our curated collection of metal wall art, wallpapers, photo frames, mirrors, wall shelves, and whimsical wall-mounted animals. Where creativity meets craftsmanship.</h5> 
+            <h5 style="margin-top: 10px;" id="footer-short-about-and-copyright-animation"> © JensorDecor. 2023</h5> 
+          </div>
+      
+      </div>
+      
+      
+      <div id="section9-footer-right">
+          
+          <ul id="footer-navigation-menu">
+              <li> <a href="https://www.facebook.com/" class="section9-footer-right-list-item">Facebook</a></li>
+              <li> <a href="https://www.instagram.com/" class="section9-footer-right-list-item">Instagram </a></li>
+              <li> <a href="https://pk.linkedin.com/" class="section9-footer-right-list-item">Linkdin</a></li>
+              <li> <a href="https://www.youtube.com/" class="section9-footer-right-list-item">YouTube</a></li>
+              <li> <a href="https://twitter.com/" class="section9-footer-right-list-item">Twitter</a></li>
+          </ul>
+      </div>
+      
+      </div>
+      
+      </div>
+      
+
+
+      <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/SHOP-page/Navbar-cstm-SHOP-script.js"></script>
+<script src="/SHOP-page/Shop-footer-script-cstm.js"></script>
+<script src="/SHOP-page/nav-menu-script-cstm.js"></script>
+</body>
+</html>

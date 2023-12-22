@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI0whr2AimJxMbf_NiDmFrEsIF25U56y4&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+     <link rel="stylesheet" href="/SHOP-page/style-SHOP-Nav.css">
+     <link rel="stylesheet" href="/Contact/CONTACTPAGE-footer-style-cstm-stl.css">
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+     integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+     integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+   <link rel="stylesheet" href="/SHOP-page/cstm-Menu_SHOP.css">
+
+</head>
+
+<body>
+
+
+      <!-- NAV-BAR-STARTS HERE -->
+  <nav id="mainnav">
+    <div class="main-home-logo">
+      <div class="home-logo">
+        <a href="/HomePage-Jenson Decor/index.html">
+          <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo-with text.svg" alt="" id="logo-with-text">
+          <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo only.svg" alt="" id="logo-without-text"
+            class="not-active-logo-cstm">
+        </a>
+      </div>
+    </div>
+    <div id="nav-menu-main">
+      <div id="nav-menu" class=" fixed-menu-navbar-custm">
+        <div id="quick-navi-pages">
+          <ul>
+            <li><a href="/Offers_page/offers.html" class="a-flex">Offers</a></li>
+            <li><a href="/Contact/Contact.html" class="a-flex">Contact</a></li>
+            <li><a href="/SHOP-page/shop.html" class="a-flex">Shop</a></li>
+          </ul>
+        </div>
+        <div id="main-menu-container">
+          <div id="menu-container">
+            <div id="hamburger-menu" onclick="menu_open()">
+              <span class="a-flex"><img src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-hamburger.svg" alt="">
+                <h6>Menu</h6>
+              </span>
+            </div>
+
+            <span class="a-flex " onclick="open_cart()"><img
+                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-cart.svg" alt=""></span>
+
+            <a href="/HomePage-Jenson Decor/login-signup/signin.html" class="a-flex"> <img
+                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-loginsvg.svg" alt=""></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- NAV-MENU-STARTS HERE -->
+  <div id="menu-parent-container">
+
+    <div id="menu-container-cstm">
+      <div class="menu-left-container">
+        <div class="menu-left-child-left">
+          <ul>
+            <h4>Follow Us</h4>
+            <li><a href="https://www.facebook.com/" class="menu-socialmedia-list-stl">Facebook</a></li>
+            <li><a href="https://twitter.com/?lang=en" class="menu-socialmedia-list-stl">Twitter</a></li>
+            <li><a href="https://www.youtube.com/" class="menu-socialmedia-list-stl">YouTube</a></li>
+            <li><a href="https://www.instagram.com/" class="menu-socialmedia-list-stl">Instagram</a></li>
+            <li><a href="https://pk.linkedin.com/" class="menu-socialmedia-list-stl">linkedin</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-left-child-right">
+          <ul>
+            <h4>Search By Category</h4>
+            <li><a href="/SHOP-page/Shop-metal-wall-decor.html" class="menu-category-list-stl">Metal wall
+                art </a></li>
+            <li><a href="/SHOP-page/Shop-wallpaper.html" class="menu-category-list-stl">Wall papers </a>
+            </li>
+            <li><a href="/SHOP-page/Shop-photoframe-art.html" class="menu-category-list-stl">Photo frame art
+              </a></li>
+            <li><a href="/SHOP-page/Shop-MirrorART.html" class="menu-category-list-stl">Mirror art</a></li>
+            <li><a href="/SHOP-page/Shop-Wallshelves.html" class="menu-category-list-stl">Wall shelves </a>
+            </li>
+            <li><a href="/SHOP-page/Shop-Wall-mounted-animals.html" class="menu-category-list-stl">Wall
+                mounted animals </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-right-container">
+        <a href="/HomePage-Jenson Decor/index.html">
+          <h1 id="menu_headings_home">HOME</h1>
+        </a>
+        <a href="/SHOP-page/shop.html">
+          <h1 id="menu_headings_home">SHOP</h1>
+        </a>
+        <a href="/About_Us-PAGE/about.html">
+          <h1 id="menu_headings_home">ABOUT</h1>
+        </a>
+        <a href="/Offers_page/offers.html">
+          <h1 id="menu_headings_home">OFFERS</h1>
+        </a>
+        <a href="/Contact/Contact.html">
+          <h1 id="menu_headings_home">CONTACT</h1>
+        </a>
+        <a href="/ProductCompare/productcomp.html">
+          <h1 id="menu_headings_home">COMPARE PRODUCTS</h1>
+        </a>
+      </div>
+    </div>
+    <span id="menu-close-button" onclick="menu_close()"><img src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg"
+        alt=""></span>
+  </div>
+  <!-- NAV-CART-END HERE -->
+  <div id="cart-parent-container">
+
+
+    <div id="cart-container">
+
+      <span id="cart-close-button" onclick="close_cart()"><img
+          src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+
+      <div id="cart-content">
+        <h2>Your Cart</h2>
+
+        <div id="product-cart-item">
+
+          <span class="product-cart-item-image"><img src="/HomePage-Jenson Decor/Assets/cart-demo-product-image-01.jpg"
+              alt=""></span>
+
+          <div class="product-cart-item-content">
+            <div class="product-cart-item-heading"></div>
+            <div class="product-cart-item-details"></div>
+          </div>
+
+        </div>
+        <h5>Your cart is empty</h5>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- NAV-BAR-ENDS HERE -->
+
+
+    <section id="main-contact-container">
+
+        <div class="contact-container-parent-left">
+            <div id="contact-heading">
+                <h1>Contact Us</h1>
+                <p>Have a Question or feedback? We're here to help.
+                    Reach out to us using the information below.
+                    We'd love to hear from you!</p>
+            </div>
+            <div class="horizontal_line_with_margin"></div>
+            <div class="contact_details">
+                <img src="/Contact/Contact_pages_assets/Contact Us-loc.svg" alt="">
+                <p>5678 Oak Avenue,
+                    Suite 300,
+                    Springfield, Anytown,
+                    New State, 12345,
+                    United States.
+                </p>
+            </div>
+
+            <div class="contact_details">
+                <img src="/Contact/Contact_pages_assets/Contact Us-phone.svg" alt="">
+                <p><a href="">+92 123 4567 90</a>
+                </p>
+            </div>
+            <div class="contact_details">
+                <img src="/Contact/Contact_pages_assets/Contact Us-msg.svg" alt="">
+                <p><a href="mailto:sales@jensondecor.com">sales@jensondecor.com</a></p>
+            </div>
+
+        </div>
+        <div class="contact-container-parent-right">
+
+            <h1>Enquiry Form</h1>
+            <form action="backend.php">
+
+                <div>
+                    <h5>First name*</h5>
+                    <input type="text" placeholder="Enter Your First Name" required
+                        id="enquiryform_input_container_Firstname">
+                </div>
+
+                <div>
+                    <h5>Last name*</h5>
+                    <input type="text" placeholder="Enter Your Last Name" required
+                        id="enquiryform_input_container_lastname">
+                </div>
+
+                <div>
+                    <h5>Email address*</h5>
+                    <input type="email" placeholder="Enter Your Email Address" required
+                        id="enquiryform_input_container_Email">
+                </div>
+
+                <div>
+                    <h5>Message</h5>
+                  <textarea name="" cols="90" rows="15" id="enquiryform_input_container_message"></textarea>
+                </div>
+
+                <div id="enquiry_form_submit_btn">
+                    <input type="submit" value="Send" id="enquiry_form_submit">
+                    <label for="enquiry_form_submit">
+                        <img src="/Contact/Contact_pages_assets/icons-asset-05.svg" alt="" id="enquiry_form_submit_img">
+                    </label>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+    <section id="contact_page_map">
+
+        <gmp-map center="24.926918029785156,67.09524536132812" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="24.926918029785156,67.09524536132812" title="My location">
+            </gmp-advanced-marker>
+          </gmp-map>
+
+    </section>
+
+
+  <!-- |
+    |
+    |
+   \|/ -->
+  <!-- section-9-FOOTER-STARTS HERE -->
+  <div id="section9-footer-parent">
+    <div id="section9-footer-container">
+
+
+      <div id="section9-footer-left">
+        <ul id="footer-navigation-menu">
+          <li> <a href="/HomePage-Jenson Decor/index.html" class="section9-footer-left-list-item">Home</a></li>
+          <li> <a href="/SHOP-page/shop.html" class="section9-footer-left-list-item">Shop</a></li>
+          <li> <a href="/Offers_page/offers.html" class="section9-footer-left-list-item">Offers</a></li>
+          <li> <a href="/About_Us-PAGE/about.html" class="section9-footer-left-list-item">About</a></li>
+          <li> <a href="/ProductCompare/productcomp.html" class="section9-footer-left-list-item">Compare Products</a>
+          </li>
+        </ul>
+      </div>
+      <div id="section9-footer-center-belowthelogo">
+        <div id="footer-logo-text">
+          <h1>JensonDecor</h1>
+          <h6>Transforming Spaces, Inspiring Lives</h6>
+        </div>
+        <div id="footer-copyright-container">
+          <h5 id="footer-short-about-and-copyright-animation"> Elevate your space with our curated collection of metal
+            wall art, wallpapers, photo frames, mirrors, wall shelves, and whimsical wall-mounted animals. Where
+            creativity meets craftsmanship.</h5>
+          <h5 style="margin-top: 10px;" id="footer-short-about-and-copyright-animation"> © JensorDecor. 2023</h5>
+        </div>
+
+      </div>
+
+
+      <div id="section9-footer-right">
+
+        <ul id="footer-navigation-menu">
+          <li> <a href="https://www.facebook.com/" class="section9-footer-right-list-item">Facebook</a></li>
+          <li> <a href="https://www.instagram.com/" class="section9-footer-right-list-item">Instagram </a></li>
+          <li> <a href="https://pk.linkedin.com/" class="section9-footer-right-list-item">Linkdin</a></li>
+          <li> <a href="https://www.youtube.com/" class="section9-footer-right-list-item">YouTube</a></li>
+          <li> <a href="https://twitter.com/" class="section9-footer-right-list-item">Twitter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <script src="/Contact/contact_script.js"></script>
+    <script src="/SHOP-page/nav-menu-script-cstm.js"></script>
+
+    <script src="/SHOP-page/Navbar-cstm-SHOP-script.js"></script>
+    <script src="/Contact/CONTACTPAGE-footer-script-cstm.js"></script>
+</body>
+
+</html>

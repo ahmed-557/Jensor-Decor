@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+  :root {
+    --bg-colour: #f4f4f4;
+    --content-colour: #262626;
+    --box-colour: #eaeaea;
+    --white: white;
+    --swiper-navigation-color: black !important;
+    --swiper-theme-color: black !important;
+    --swiper-pagination-color: rgb(255, 252, 252) ! important;
+}
+#main_offers_container_parent{
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+}
+#no_current_offers_window{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(15px);
+  filter: grayscale(1);
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+
+}
+
+#no_current_offers_window-content{
+  display: flex;
+  margin-top: -4%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#no_current_offers_window-content svg{
+  width: 10%;
+  stroke-width: 1px;
+  stroke: rgb(0, 0, 0);
+  fill-opacity: 0;
+  stroke-dasharray: 1500;
+  animation: drawlogo 3s ease-in-out infinite;
+  
+  margin-bottom: 20px;
+}
+@keyframes drawlogo {
+  0%{stroke-dashoffset: 1500;}
+  100%{stroke-dashoffset: 0;opacity: 1 }
+  
+}
+#no_current_offers_window-content p{
+  text-align: center;
+width: 60%;
+}
+
+#quickredirectbtns{
+  display: flex;
+ width: 14%;
+ justify-content: space-between;
+
+  
+}
+#no_current_offers_window-content button{
+  background-color: transparent;
+  border: 1px solid var(--content-colour);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 9pt;
+  flex-direction: row;
+  padding: 4px 15px;
+}
+#no_current_offers_window-content a{
+  margin: 0px;
+  align-items: center;
+  display: flex;
+}
+
+#no_current_offers_window-content button:hover{
+
+  background-color: var(--content-colour);
+
+}
+#no_current_offers_window-content button:hover .child_btn_hover_fx{
+  transition: 300ms;
+  color: var(--bg-colour);
+
+}
+
+
+
+  .col-4, .card, .card-body{
+display: flex;
+flex-direction: column;
+align-items: center;
+border: none;
+  }
+
+ 
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    margin: 5px;
+    border: none; /* Remove border */
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border: 1px solid black; /* Set border color to black */
+  }
+
+  .tag:hover  {
+
+    background-color: #262626 ; /* Darker background color on hover */
+    color:#f4f4f4
+  }
+  .tag:hover a{
+    color: white;
+  }
+
+  .selected-tag {
+    background-color: black;
+    color: #fff;
+    cursor: default; /* Prevents further changes */
+  }
+  .dropdown-menu{
+      background-color: #f4f4f4;
+  }
+
+  .arrow_icon_custm{
+    padding-left: 2px;
+    width: 23px;
+  }
+ #tag8-arrow{
+  width: 193px;
+ }
+ #tag8-arrow:hover .arrow_icon_custm{
+filter: invert(1);
+ }
+ .tag8-btn{
+  background-color: transparent;
+  font-size: 7.5pt;
+  font-weight: 300;
+ }
+.tag8-btn:hover{
+  color: #ffffff;
+  background-color: #262626;
+ }
+
+ .dropdown-list-custm-sty{
+  border: 1px solid #262626;
+ }
+ .dropdown-list-custm-sty:active{
+  background-color: var(--content-colour);
+ }
+
+
+
+
+
+ 
+ .product-card-container{
+  width: 25vw;
+  height: 66vh;
+  background-color: var(--box-colour);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 20px;
+  padding: 15px;
+ }
+ .product-card-container img{
+  width: 95%;
+ }
+ .product-card-content{
+margin-top: 10px;
+  width: 95%;
+  align-items: center;
+  display: flex;
+   }
+
+ .product-card-content-left{
+  width: 77%;
+
+ }
+ .rating-container-cstm{
+
+width: 40%;
+ }
+ .product-card-container h1{
+font-size: 12pt;
+font-weight: 700;
+margin: 0;
+margin-top: 5px;
+ }
+ .product-card-container p{
+font-size: 8pt;
+width: 93%;
+font-weight: 400;
+margin: 0;
+margin-top: 4px;
+ }
+
+ .product-card-content-right{
+  width: 24%;
+  display: flex;
+  align-self: flex-start;
+  font-weight: 700;
+  justify-content: space-between;
+  text-align: right;
+  flex-direction: column;
+
+ }
+ .product-card-content-right h5{
+  font-size: 10pt;
+  margin-top: 10px;
+  font-weight: 300;
+ }
+a{
+  color: var(--content-colour);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--content-colour);
+  text-decoration: none;
+}

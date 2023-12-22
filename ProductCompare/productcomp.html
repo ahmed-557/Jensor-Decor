@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/SHOP-page/style-SHOP-Nav.css">
+    <link rel="stylesheet" href="/SHOP-page/Shop-footer-style-cstm-stl.css">
+    <link rel="stylesheet" href="/ProductCompare/ComparePage-cstm-stl.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="/SHOP-page/cstm-Menu_SHOP.css">
+
+    <title>Product Compare</title>
+
+</head>
+
+<body>
+
+
+    <!-- NAV-BAR-STARTS HERE -->
+    <nav id="mainnav">
+        <div class="main-home-logo">
+            <div class="home-logo">
+                <a href="/HomePage-Jenson Decor/index.html">
+                    <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo-with text.svg" alt="" id="logo-with-text">
+                    <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo only.svg" alt="" id="logo-without-text"
+                        class="not-active-logo-cstm">
+                </a>
+            </div>
+        </div>
+        <div id="nav-menu-main">
+            <div id="nav-menu" class=" fixed-menu-navbar-custm">
+                <div id="quick-navi-pages">
+                    <ul>
+                        <li><a href="/Offers_page/offers.html" class="a-flex">Offers</a></li>
+                        <li><a href="/Contact/Contact.html" class="a-flex">Contact</a></li>
+                        <li><a href="/SHOP-page/shop.html" class="a-flex">Shop</a></li>
+                    </ul>
+                </div>
+                <div id="main-menu-container">
+                    <div id="menu-container">
+                        <div id="hamburger-menu" onclick="menu_open()">
+                            <span class="a-flex"><img src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-hamburger.svg"
+                                    alt="">
+                                <h6>Menu</h6>
+                            </span>
+                        </div>
+
+                        <span class="a-flex " onclick="open_cart()"><img
+                                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-cart.svg" alt=""></span>
+
+                        <a href="/HomePage-Jenson Decor/login-signup/signin.html" class="a-flex"> <img
+                                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-loginsvg.svg" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAV-MENU-STARTS HERE -->
+    <div id="menu-parent-container">
+
+        <div id="menu-container-cstm">
+            <div class="menu-left-container">
+                <div class="menu-left-child-left">
+                    <ul>
+                        <h4>Follow Us</h4>
+                        <li><a href="https://www.facebook.com/" class="menu-socialmedia-list-stl">Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=en" class="menu-socialmedia-list-stl">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/" class="menu-socialmedia-list-stl">YouTube</a></li>
+                        <li><a href="https://www.instagram.com/" class="menu-socialmedia-list-stl">Instagram</a></li>
+                        <li><a href="https://pk.linkedin.com/" class="menu-socialmedia-list-stl">linkedin</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-left-child-right">
+                    <ul>
+                        <h4>Search By Category</h4>
+                        <li><a href="/SHOP-page/Shop-metal-wall-decor.html" class="menu-category-list-stl">Metal wall
+                                art </a></li>
+                        <li><a href="/SHOP-page/Shop-wallpaper.html" class="menu-category-list-stl">Wall papers </a>
+                        </li>
+                        <li><a href="/SHOP-page/Shop-photoframe-art.html" class="menu-category-list-stl">Photo frame art
+                            </a></li>
+                        <li><a href="/SHOP-page/Shop-MirrorART.html" class="menu-category-list-stl">Mirror art</a></li>
+                        <li><a href="/SHOP-page/Shop-Wallshelves.html" class="menu-category-list-stl">Wall shelves </a>
+                        </li>
+                        <li><a href="/SHOP-page/Shop-Wall-mounted-animals.html" class="menu-category-list-stl">Wall
+                                mounted animals </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-right-container">
+                <a href="/HomePage-Jenson Decor/index.html">
+                    <h1 id="menu_headings_home">HOME</h1>
+                </a>
+                <a href="/SHOP-page/shop.html">
+                    <h1 id="menu_headings_home">SHOP</h1>
+                </a>
+                <a href="/About_Us-PAGE/about.html">
+                    <h1 id="menu_headings_home">ABOUT</h1>
+                </a>
+                <a href="/Offers_page/offers.html">
+                    <h1 id="menu_headings_home">OFFERS</h1>
+                </a>
+                <a href="/Contact/Contact.html">
+                    <h1 id="menu_headings_home">CONTACT</h1>
+                </a>
+                <a href="/ProductCompare/productcomp.html">
+                    <h1 id="menu_headings_home">COMPARE PRODUCTS</h1>
+                </a>
+            </div>
+        </div>
+        <span id="menu-close-button" onclick="menu_close()"><img
+                src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+    </div>
+    <!-- NAV-CART-END HERE -->
+    <div id="cart-parent-container">
+
+
+        <div id="cart-container">
+
+            <span id="cart-close-button" onclick="close_cart()"><img
+                    src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+
+            <div id="cart-content">
+                <h2>Your Cart</h2>
+
+                <div id="product-cart-item">
+
+                    <span class="product-cart-item-image"><img
+                            src="/HomePage-Jenson Decor/Assets/cart-demo-product-image-01.jpg" alt=""></span>
+
+                    <div class="product-cart-item-content">
+                        <div class="product-cart-item-heading"></div>
+                        <div class="product-cart-item-details"></div>
+                    </div>
+
+                </div>
+                <h5>Your cart is empty</h5>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- NAV-BAR-ENDS HERE -->
+
+
+    <div class="main_page_parent_container">
+        <h1 class="display-5 my-5 text-center">Compare Products</h1>
+        <div class="container">
+            <div class="col-md-9 mx-auto">
+                <table class="table">
+                    <tr class="bg-light">
+                        <th>Select Product</th>
+                        <th width="300px">
+                            <select class="form-control" id="select1" onchange="item1(this.value)">
+                                <option value="0">-- Select Anyone --</option>
+                            </select>
+                        </th>
+                        <th width="300px">
+                            <select class="form-control" id="select2" onchange="item2(this.value)">
+                                <option value="0">-- Select Anyone --</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Product Image</th>
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                                id="img1" alt=" ">
+                        </td>
+                        <td>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                                id="img2" alt=" ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Product Price</th>
+                        <td id="price1">N/A</td>
+                        <td id="price2">N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Product Description</th>
+                        <td id="desc1">N/A</td>
+                        <td id="desc2">N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Product Brand</th>
+                        <td id="brand1">N/A</td>
+                        <td id="brand2">N/A</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-9-FOOTER-STARTS HERE -->
+    <div id="section9-footer-parent">
+        <div id="section9-footer-container">
+
+
+            <div id="section9-footer-left">
+                <ul id="footer-navigation-menu">
+                    <li> <a href="/HomePage-Jenson Decor/index.html" class="section9-footer-left-list-item">Home</a>
+                    </li>
+                    <li> <a href="/SHOP-page/shop.html" class="section9-footer-left-list-item">Shop</a></li>
+                    <li> <a href="/Offers_page/offers.html" class="section9-footer-left-list-item">Offers</a></li>
+                    <li> <a href="/About_Us-PAGE/about.html" class="section9-footer-left-list-item">About</a></li>
+                    <li> <a href="/ProductCompare/productcomp.html" class="section9-footer-left-list-item">Compare
+                            Products</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="section9-footer-center-belowthelogo">
+                <div id="footer-logo-text">
+                    <h1>JensonDecor</h1>
+                    <h6>Transforming Spaces, Inspiring Lives</h6>
+                </div>
+                <div id="footer-copyright-container">
+                    <h5 id="footer-short-about-and-copyright-animation"> Elevate your space with our curated collection
+                        of metal
+                        wall art, wallpapers, photo frames, mirrors, wall shelves, and whimsical wall-mounted animals.
+                        Where
+                        creativity meets craftsmanship.</h5>
+                    <h5 style="margin-top: 10px;" id="footer-short-about-and-copyright-animation"> © JensorDecor. 2023
+                    </h5>
+                </div>
+
+            </div>
+
+
+            <div id="section9-footer-right">
+
+                <ul id="footer-navigation-menu">
+                    <li> <a href="https://www.facebook.com/" class="section9-footer-right-list-item">Facebook</a></li>
+                    <li> <a href="https://www.instagram.com/" class="section9-footer-right-list-item">Instagram </a>
+                    </li>
+                    <li> <a href="https://pk.linkedin.com/" class="section9-footer-right-list-item">Linkdin</a></li>
+                    <li> <a href="https://www.youtube.com/" class="section9-footer-right-list-item">YouTube</a></li>
+                    <li> <a href="https://twitter.com/" class="section9-footer-right-list-item">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+    <script src="/SHOP-page/nav-menu-script-cstm.js"></script>
+
+    <script src="/SHOP-page/Navbar-cstm-SHOP-script.js"></script>
+    <script src="/ProductCompare/ComparePage-footer-script-cstm.js"></script>
+</body>
+
+</html>
+
+<script src="src/data.js"></script>
+<script src="main.js"></script>

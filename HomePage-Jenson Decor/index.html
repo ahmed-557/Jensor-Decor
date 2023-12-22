@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JensonDecor</title>
+    <link rel="stylesheet" href="/HomePage-Jenson Decor/style-Home-Nav.css">
+    <link rel="stylesheet" href="/HomePage-Jenson Decor/home-footer-style-cstm-stl.css">
+    <link rel="stylesheet" href="/HomePage-Jenson Decor/home-page-stylesheet.css">
+    <link rel="stylesheet" href="/HomePage-Jenson Decor/cstm-Menu.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <!-- NAV-BAR-STARTS HERE -->
+    <nav id="mainnav">
+        <div class="main-home-logo">
+            <div class="home-logo">
+                <a href="/HomePage-Jenson Decor/index.html">
+                    <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo-with text.svg" alt="" id="logo-with-text">
+                    <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo only.svg" alt="" id="logo-without-text"
+                        class="not-active-logo-cstm">
+                </a>
+            </div>
+        </div>
+        <div id="nav-menu-main">
+            <div id="nav-menu" class=" fixed-menu-navbar-custm">
+                <div id="quick-navi-pages">
+                    <ul>
+                        <li><a href="/Offers_page/offers.html" class="a-flex">Offers</a></li>
+                        <li><a href="/Contact/Contact.html" class="a-flex">Contact</a></li>
+                        <li><a href="/SHOP-page/shop.html" class="a-flex">Shop</a></li>
+                    </ul>
+                </div>
+                <div id="main-menu-container">
+                    <div id="menu-container">
+                        <div id="hamburger-menu" onclick="menu_open()">
+                            <span class="a-flex"><img src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-hamburger.svg"
+                                    alt="">
+                                <h6>Menu</h6>
+                            </span>
+                        </div>
+
+                        <span class="a-flex " onclick="open_cart()"><img
+                                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-cart.svg" alt=""></span>
+
+                        <a href="/HomePage-Jenson Decor/login-signup/signin.html" class="a-flex"> <img
+                                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-loginsvg.svg" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV-MENU-STARTS HERE -->
+    <div id="menu-parent-container">
+
+        <div id="menu-container-cstm">
+            <div class="menu-left-container">
+                <div class="menu-left-child-left">
+                    <ul>
+                        <h4>Follow Us</h4>
+                        <li><a href="https://www.facebook.com/" class="menu-socialmedia-list-stl">Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=en" class="menu-socialmedia-list-stl">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/" class="menu-socialmedia-list-stl">YouTube</a></li>
+                        <li><a href="https://www.instagram.com/" class="menu-socialmedia-list-stl">Instagram</a></li>
+                        <li><a href="https://pk.linkedin.com/" class="menu-socialmedia-list-stl">linkedin</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-left-child-right">
+                    <ul>
+                        <h4>Search By Category</h4>
+                        <li><a href="/SHOP-page/Shop-metal-wall-decor.html" class="menu-category-list-stl">Metal wall
+                                art </a></li>
+                        <li><a href="/SHOP-page/Shop-wallpaper.html" class="menu-category-list-stl">Wall papers </a>
+                        </li>
+                        <li><a href="/SHOP-page/Shop-photoframe-art.html" class="menu-category-list-stl">Photo frame art
+                            </a></li>
+                        <li><a href="/SHOP-page/Shop-MirrorART.html" class="menu-category-list-stl">Mirror art</a></li>
+                        <li><a href="/SHOP-page/Shop-Wallshelves.html" class="menu-category-list-stl">Wall shelves </a>
+                        </li>
+                        <li><a href="/SHOP-page/Shop-Wall-mounted-animals.html" class="menu-category-list-stl">Wall
+                                mounted animals </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-right-container">
+                <a href="/HomePage-Jenson Decor/index.html">
+                    <h1 id="menu_headings_home">HOME</h1>
+                </a>
+                <a href="/SHOP-page/shop.html">
+                    <h1 id="menu_headings_home">SHOP</h1>
+                </a>
+                <a href="/About_Us-PAGE/about.html">
+                    <h1 id="menu_headings_home">ABOUT</h1>
+                </a>
+                <a href="/Offers_page/offers.html">
+                    <h1 id="menu_headings_home">OFFERS</h1>
+                </a>
+                <a href="/Contact/Contact.html">
+                    <h1 id="menu_headings_home">CONTACT</h1>
+                </a>
+                <a href="/ProductCompare/productcomp.html">
+                    <h1 id="menu_headings_home">COMPARE PRODUCTS</h1>
+                </a>
+            </div>
+        </div>
+        <span id="menu-close-button" onclick="menu_close()"><img
+                src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+    </div>
+    <!-- NAV-CART-END HERE -->
+    <div id="cart-parent-container">
+
+
+        <div id="cart-container">
+
+            <span id="cart-close-button" onclick="close_cart()"><img
+                    src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+
+            <div id="cart-content">
+                <h2>Your Cart</h2>
+
+                <div id="product-cart-item">
+
+                    <span class="product-cart-item-image"><img
+                            src="/HomePage-Jenson Decor/Assets/cart-demo-product-image-01.jpg" alt=""></span>
+
+                    <div class="product-cart-item-content">
+                        <div class="product-cart-item-heading"></div>
+                        <div class="product-cart-item-details"></div>
+                    </div>
+
+                </div>
+                <h5>Your cart is empty</h5>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- NAV-BAR-ENDS HERE -->
+
+    <!-- |
+    |
+    |
+   \|/ -->
+
+    <!-- HOMEPAGE-ANIMATION-STARTS HERE -->
+    <section id="homepage-heading-animation-section1-main">
+
+        <div id="homepage-heading-animation-section1-top">
+            <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo only.svg" alt=""
+                id="home-page-logo-animation-top">
+            <h1 id="homepage-heading-animation-section1-top-heading">Style Your Space with</h1>
+        </div>
+
+        <!-- HOMEPAGE-AFTER ANIMATION-SLIDER-STARTS HERE -->
+        <div id="homepage-heading-animation-section1-center">
+
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                space-between="30" centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
+
+                <swiper-slide class="slider-custm-styling"><img
+                        src="/HomePage-Jenson Decor/Homepage-Slider-images/animal wall decor-edited-test.jpg" alt=""
+                        class="slider-images-dark-effect-cstm-styl">
+                    <div class="image-slider-overtext-cstm-styl">
+                        <h1>Whimsical Charm on Your Walls</h1>
+                        <p>Infuse your space with playful elegance using our wall animal decor. From majestic to
+                            adorable, bring the enchantment of the wild into your home effortlessly.</p>
+                    </div>
+                </swiper-slide>
+
+                <swiper-slide class="slider-custm-styling"><img
+                        src="/HomePage-Jenson Decor/Homepage-Slider-images/Photo frame-High-res-2.jpg" alt=""
+                        class="slider-images-dark-effect-cstm-styl">
+                    <div class="image-slider-overtext-cstm-styl">
+                        <h1>Capture Moments, Frame Memories</h1>
+                        <p>Cherish memories with our elegant photo frames. From modern to classic, find the perfect
+                            frame for every moment.</p>
+                    </div>
+                </swiper-slide>
+
+
+                <swiper-slide class="slider-custm-styling">
+                    <img src="/HomePage-Jenson Decor/Homepage-Slider-images/Metal wall art-cs.jpg" alt=""
+                        class="slider-images-dark-effect-cstm-styl">
+                    <div class="image-slider-overtext-cstm-styl">
+                        <h1>Artistry in Metal, Redefining Spaces</h1>
+                        <p>Make a statement with our mesmerizing metal wall art. Each piece is a masterpiece—elegance
+                            crafted in metal.</p>
+
+
+                    </div>
+
+                </swiper-slide>
+
+
+                <swiper-slide class="slider-custm-styling">
+                    <img src="/HomePage-Jenson Decor/Homepage-Slider-images/shelve.jpg" alt=""
+                        class="slider-images-dark-effect-cstm-styl">
+                    <div class="image-slider-overtext-cstm-styl">
+                        <h1>Functional Style, Elevated</h1>
+                        <p>Maximize space with our chic wall shelves. Modern design meets practicality—transform your
+                            walls with flair.</p>
+
+
+                    </div>
+
+                </swiper-slide>
+
+                <swiper-slide class="slider-custm-styling">
+                    <img src="/HomePage-Jenson Decor/Homepage-Slider-images/Wallapaper.jpg" alt=""
+                        class="slider-images-dark-effect-cstm-styl">
+                    <div class="image-slider-overtext-cstm-styl">
+                        <h1>Luxurious Walls, Defined by You</h1>
+                        <p>Discover exquisite wallpapers to redefine your space. Timeless designs, contemporary
+                            elegance—your walls, your style.</p>
+
+
+                    </div>
+
+                </swiper-slide>
+
+
+
+            </swiper-container>
+
+        </div>
+
+
+
+        <div id="homepage-heading-animation-section1-bottom">
+            <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo only.svg" alt=""
+                id="home-page-logo-animation-bottom">
+            <h1 id="homepage-heading-animation-section1-bottom-heading">Elegance</h1>
+        </div>
+    </section>
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-3-about-us-STARTS HERE -->
+
+    <section id="section-3-about-us-parent-container">
+
+        <div id="section-3-left-main-container">
+
+            <img src="/HomePage-Jenson Decor/homepage-extra-images/photo-frame.jpg" alt="" id="section-3-left-image-2">
+            <img src="/HomePage-Jenson Decor/homepage-extra-images/wall shelve.jpg" alt="" id="section-3-left-image-1">
+        </div>
+
+
+        <div id="section-3-right-main-container">
+            <h1 id="section-3-about-heading">Welcome to Your Haven of Style: Elevate Your Space with Our Exquisite Home
+                Decor Collection</h1>
+
+
+            <p id="section-3-about-Para">Explore distinctive home decor—a curated blend of artistry and functionality.
+                Elevate every corner with
+                our timeless pieces, meticulously crafted to reflect your unique style. Welcome to a sanctuary of
+                sophistication.</p>
+            <span id="custom-span-btn-theme"><a href="/About_Us-PAGE/about.html" id="custom-span-btn-theme-a"> About Us <img
+                        src="/HomePage-Jenson Decor/Assets/icons-asset-05.svg" alt=""></a></span>
+        </div>
+    </section>
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-4-recent-products-STARTS HERE -->
+
+    <section id="section-4-recent-products-parent-container">
+        <div id="custom_drag_cursor"> &#60; DRAG &#62; </div>
+        <div class="section-4-recent-product-heading">
+            <h2>Recent Product</h2>
+            <h6>07 Products</h6>
+        </div>
+        <div class="horizonal-line-cstm"></div>
+        <div id="section-4-recent-products-slider-container">
+            <swiper-container class="mySwiper" slides-per-view="4" space-between="30" free-mode="true" autoplay="true">
+
+
+                <!-- Abstract Wallpaper -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Modern Abstract Wallpaper-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Modern Abstract Wallpaper-02/813oZcSSIvL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Abstract Wallpaper</h2>
+                                <h2>$118.66</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Modern Abstract Cream Wallpaper: Versatile and chic, transforming your space with
+                                    contemporary flair.</p>
+                                <div class="rating-container"> &#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+                <!-- Metal Wall Mirror -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Metal Wall Mirror-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Metal Wall Mirror/71NSwJDo3qL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Metal Wall Mirror</h2>
+                                <h2>$22.99</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Modern ginkgo biloba-shaped metal wall decor, durable and easy to install for a
+                                    stylish home upgrade.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Floating Metal Shelve -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Floating Metal Shelve-detailedpage.html" class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Floating Metal Shelve/81zPiIazjpL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Floating Metal Shelve</h2>
+                                <h2>$50.00</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Upgrade your space effortlessly with our versatile floating shelf—stylish, easy to
+                                    install, and low-maintenance.</p>
+                                <div class="rating-container"> &#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Metallic Branch Elegance -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Metallic-Branch Elegance-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Metallic Branch Elegance-metal wall art-01/metal-wall-art-01-img1.jpeg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Metallic Branch Elegance</h2>
+                                <h2>$34.99</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Our metal wall art features nature-inspired branches in contemporary metallic tones.
+                                </p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Elegant Metal Frame  -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Elegant Metal Frame-detailedpage.html" class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Elegant Metal Frame /715L2hYczvL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Elegant Metal Frame </h2>
+                                <h2>$10.29</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Elegantly frame your memories with our gold vintage metal frames, designed for
+                                    versatile display.
+                                </p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+                <!-- Geometric Compass -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Geometric Compass-metalwallart-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Geometric Compass-metalwallart-02/81yJdx+uKhL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Geometric Compass</h2>
+                                <h2>$29.56</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Matt Black steel wall decor: Lightweight, easy to hang, and modernly chic.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+                <!-- Chic Deer Wall Décor -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Chic Deer Head Wall Décor-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Chic Deer Head Wall Décor-02/61Hcupwo03S._AC_SL1024_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Chic Deer Wall Décor</h2>
+                                <h2>$14.56</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>A perfect blend of modern sophistication and timeless elegance.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+
+
+
+
+
+
+
+            </swiper-container>
+        </div>
+    </section>
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-5-Catagory-STARTS HERE -->
+
+
+    <section id="section5-parent-container-catagory">
+        <div class="section-5-recent-product-heading">
+            <h2>Category</h2>
+            <h6>06 Category</h6>
+        </div>
+        <div class="horizonal-line-cstm"></div>
+
+        <div id="section5-parent-slider-container-catagory">
+            <div id="section5-second-slider-parent-container-catagory">
+
+
+
+                <!-- Metal wall art  -->
+                <div id="section5-catagory-child">
+
+                    <img src="/HomePage-Jenson Decor/home-page-category-images/Metal wall art.jpg" alt="">
+                    <div id="section5-catagory-card">
+                        <h1>Metal Wall Art</h1>
+                        <p>durable, contemporary decor with abstract designs or nature motifs, reflecting personal style
+                            in a concise form.</p>
+                        <span id="custom-span-btn-theme"><a href="/SHOP-page/Shop-metal-wall-decor.html" id="custom-span-btn-theme-a"> Shop Now <img
+                                    src="/HomePage-Jenson Decor/Assets/icons-asset-05.svg" alt=""></a></span>
+                    </div>
+                </div>
+
+                <!-- Wall papers  -->
+                <div id="section5-catagory-child">
+
+                    <img src="/HomePage-Jenson Decor/home-page-category-images/Wallpaper-high.jpg" alt="">
+                    <div id="section5-catagory-card">
+                        <h1>Wall Papers</h1>
+                        <p> a quick and stylish solution for personalized room transformations, featuring a variety of
+                            patterns and colors to enhance your living space effortlessly.</p>
+                        <span id="custom-span-btn-theme"><a href="/SHOP-page/Shop-wallpaper.html"
+                                id="custom-span-btn-theme-a"> Shop Now <img
+                                    src="/HomePage-Jenson Decor/Assets/icons-asset-05.svg" alt=""></a></span>
+                    </div>
+                </div>
+
+                <!-- Photo frame art  -->
+                <div id="section5-catagory-child">
+
+                    <img src="/HomePage-Jenson Decor/home-page-category-images/PhotoFrame.jpg" alt="">
+                    <div id="section5-catagory-card">
+                        <h1>Photo Frame Art </h1>
+                        <p>effortlessly personalize your space with cherished memories, creating stylish focal points in
+                            various styles and sizes for an enhanced home ambiance.</p>
+                        <span id="custom-span-btn-theme"><a href="/SHOP-page/Shop-photoframe-art.html"
+                                id="custom-span-btn-theme-a"> Shop Now <img
+                                    src="/HomePage-Jenson Decor/Assets/icons-asset-05.svg" alt=""></a></span>
+                    </div>
+                </div>
+
+                <!-- Mirror art  -->
+                <div id="section5-catagory-child">
+
+                    <img src="/HomePage-Jenson Decor/home-page-category-images/Mirror wall.jpg" alt="">
+                    <div id="section5-catagory-card">
+                        <h1>Mirror Art</h1>
+                        <p> a stylish and functional decor choice, adding depth and elegance to your space with diverse
+                            designs and sizes.</p>
+                        <span id="custom-span-btn-theme"><a href="/SHOP-page/Shop-MirrorART.html"
+                                id="custom-span-btn-theme-a"> Shop Now <img
+                                    src="/HomePage-Jenson Decor/Assets/icons-asset-05.svg" alt=""></a></span>
+                    </div>
+                </div>
+
+                <!-- Wall shelves   -->
+                <div id="section5-catagory-child">
+
+                    <img src="/HomePage-Jenson Decor/home-page-category-images/wall shelve.jpeg" alt="">
+                    <div id="section5-catagory-card">
+                        <h1>Wall Shelves </h1>
+                        <p>a practical and stylish storage solution that maximizes space while adding a modern touch to
+                            your walls.</p>
+                        <span id="custom-span-btn-theme"><a href="/SHOP-page/Shop-Wallshelves.html"
+                                id="custom-span-btn-theme-a"> Shop Now <img
+                                    src="/HomePage-Jenson Decor/Assets/icons-asset-05.svg" alt=""></a></span>
+                    </div>
+                </div>
+
+                <!--Wall mounted animals  -->
+                <div id="section5-catagory-child">
+
+                    <img src="/HomePage-Jenson Decor/home-page-category-images/Animal-decor.jpg" alt="">
+                    <div id="section5-catagory-card">
+                        <h1>Wall Mounted Animals </h1>
+                        <p>These artistic pieces seamlessly blend creativity and charm, transforming your walls into a
+                            captivating display of wildlife in a modern and unique way.</p>
+                        <span id="custom-span-btn-theme"><a href="/SHOP-page/Shop-Wall-mounted-animals.html"
+                                id="custom-span-btn-theme-a"> Shop Now <img
+                                    src="/HomePage-Jenson Decor/Assets/icons-asset-05.svg" alt=""></a></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-6-Products-STARTS HERE -->
+
+
+    <section id="section-6-products-parent-container">
+        <div id="custom_drag_cursor1"> &#60; DRAG &#62; </div>
+        <div class="section-6-recent-product-heading">
+            <h2>Products</h2>
+            <h6 id="Section6-View-All-Products-btn"><a href="/SHOP-page/shop.html"
+                    id="Section6-View-All-Products-btn-text">View All Products</a></h6>
+        </div>
+        <div class="horizonal-line-cstm"></div>
+        <div id="section-6-products-slider-container">
+            <swiper-container class="mySwiper" slides-per-view="4" space-between="30" free-mode="true" autoplay="true">
+
+
+                <!-- Gold Lion Head -->
+                <swiper-slide class="drag-product-slider-home" id="section-6-product-card-container">
+                    <a href="/JensonDecor-Product detail page/Gold Lion Head-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Gold Lion Head-03/611wLSaKUyL._AC_SL1200_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Gold Lion Head</h2>
+                                <h2>$34.00</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Chic lion head wall sconce: modern gold design, dimmable, easy DIY installation.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+                <!-- Gold Wall Mirror -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Gold Wall-Mounted Mirror-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Gold Wall-Mounted Mirror/71QjLEWNhwL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Gold Wall Mirror</h2>
+                                <h2>$28.84</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Elevate your living room aesthetics with a crafted gold wall-mounted mirror,
+                                    seamlessly blending style and sophistication.</p>
+                                <div class="rating-container"> &#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Silver Floral Wallpaper -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Silver Floral Wallpaper-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Silver Floral Wallpaper-01/81kgL37SInL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Silver Floral Wallpaper</h2>
+                                <h2>$83.00</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Timeless silver elegance meets modern charm in our Floral Wallpaper, transforming
+                                    your space with sophistication</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Honeycomb Shelves -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Honeycomb Shelves-detailedpage.html" class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Honeycomb Shelves/811cXPHPSJL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Honeycomb Shelves</h2>
+                                <h2>$44.56</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Stylish Hexagon Floating Shelves Set of 5 with driftwood finish for modern farmhouse
+                                    storage.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Sky Elegance Collection -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Sky Elegance Collection-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Sky Elegance Collection-03/81P1e4gfc5L._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Sky Elegance Collection</h2>
+                                <h2>$79.48</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Featuring modern wallpapers inspired by the ethereal beauty of the sky for a timeless
+                                    and tranquil ambiance.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Metal Geometric Stripe -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Metal Geometric 3D Stripe-metalwallart-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Metal Geometric 3D Stripe-metalwallart-03/81rMlK8kNYL._AC_SL1500_.jpg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Metal Geometric Stripe</h2>
+                                <h2>$18.66</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Contemporary gold geometric wall decor: sleek, durable, and effortlessly transforms
+                                    your space.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+                <!-- Starry Night Sky -->
+                <swiper-slide class="drag-product-slider-home">
+                    <a href="/JensonDecor-Product detail page/Starry Night Sky-detailedpage.html"
+                        class="default-a-tag-cstm-stl">
+                        <img src="/SHOP-page/All products images-SHOP/Starry Night Sky-wallpaper-04/R18545_image2.webp.jpeg"
+                            alt="">
+                        <div class="product-card-details">
+                            <div id="product-card-details-child-top-heading-and-price">
+                                <h2>Starry Night Sky</h2>
+                                <h2>$92.26</h2>
+                            </div>
+
+                            <div id="product-card-details-child-bottom-description-and-rating">
+
+                                <p>Transform your space with our Starry Night Sky Wallpaper, bringing celestial charm to
+                                    your walls.</p>
+                                <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                            </div>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+
+
+            </swiper-container>
+        </div>
+    </section>
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-7-Testimonial-STARTS HERE -->
+    <section id="section7-parent">
+        <div class="section-4-recent-product-heading">
+            <h2>WORDS OF GOODNESS</h2>
+            <h6>MESSAGES OF LOVE & SUPPORT</h6>
+        </div>
+        <div class="horizonal-line-cstm mb-60px"></div>
+        <div id="section-7-testimonial-main-contaienr">
+
+            <div class="section7-testimonial-slider-parent-container">
+                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+                    slides-per-view="3" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+                    coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false"
+                    autoplay='true'>
+
+                    <!-- Emily M. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>Emily M.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>Absolutely thrilled with my metal wall art! The craftsmanship is top-notch, and it adds the
+                            perfect modern touch to my living room. Shipping was fast, and the item was well-packaged.
+                            Highly recommend! </p>
+                    </swiper-slide>
+
+                    <!-- James R. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>James R.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>The variety of wall papers on this site is amazing! I found the perfect design for my
+                            bedroom, and the quality exceeded my expectations. The website made it easy to browse and
+                            choose. A great experience overall. </p>
+                    </swiper-slide>
+
+                    <!-- Olivia S. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>Olivia S.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>Photo frame art that tells a story! I love the unique collection here. I found a beautiful
+                            piece that complements my home decor perfectly. The attention to detail is impressive, and
+                            it arrived in perfect condition.</p>
+                    </swiper-slide>
+
+                    <!-- Benjamin H. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>Benjamin H.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>Mirror, mirror on the wall, this mirror art is the fairest of them all! The intricate designs
+                            and quality of the mirrors are outstanding. It's a statement piece in my foyer, and I've
+                            received so many compliments.</p>
+                    </swiper-slide>
+
+                    <!-- Natalie P. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>Natalie P.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>Wall shelves that are both functional and stylish! I purchased a set for my home office, and
+                            they're perfect for displaying my books and decor. Sturdy and easy to install. I'm a happy
+                            customer!</p>
+                    </swiper-slide>
+
+                    <!-- Ethan L. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>Ethan L.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>The wall-mounted animals are a whimsical addition to my kid's playroom. The variety is
+                            fantastic, and they're well-made. It's a fun and creative way to liven up the space. The
+                            kids love them!</p>
+                    </swiper-slide>
+
+                    <!-- Sophia C. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>Sophia C.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>This metal wall art exceeded my expectations. The quality is superb, and the design is even
+                            more stunning in person. It's a focal point in my dining room, and I couldn't be happier
+                            with my purchase</p>
+                    </swiper-slide>
+
+                    <!-- Liam G. -->
+                    <swiper-slide class="testimonial-card-cstm-stl">
+                        <div class="testimonial-card-head">
+                            <h1>Liam G.</h1>
+                            <div class="rating-container">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+                        </div>
+
+                        <div class="horizonal-line-cstm-nomargin  mt-10px"></div>
+                        <p>
+                            *Feedback: The selection of wall papers is impressive, and the website's interface makes it
+                            easy to find the perfect match for any room. I appreciate the range of styles available.
+                            Quick delivery and excellent customer service!</p>
+                    </swiper-slide>
+
+
+
+
+
+                </swiper-container>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-8-EMAIL SUBSCRIPTION-STARTS HERE -->
+
+    <div id="section8-parent-container">
+        <div id="section8-container">
+
+            <div class="overflow-box-email">
+
+                <h6>Never miss out, Stay updated</h6>
+                <form action="">
+
+                    <input type="email" name="" id="" placeholder="Enter Your Email" required class="email_input_box">
+                    <input type="submit" class="email_submit_btn">
+                </form>
+
+
+            </div>
+
+            <h1>SUBSCRIBE</h1>
+            <h1>TO OUR NEWSLETTER</h1>
+        </div>
+    </div>
+
+
+    <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-9-FOOTER-STARTS HERE -->
+    <div id="section9-footer-parent">
+        <div id="section9-footer-container">
+
+
+            <div id="section9-footer-left">
+                <ul id="footer-navigation-menu">
+                    <li> <a href="/HomePage-Jenson Decor/index.html" class="section9-footer-left-list-item">Home</a>
+                    </li>
+                    <li> <a href="/SHOP-page/shop.html" class="section9-footer-left-list-item">Shop</a></li>
+                    <li> <a href="/Contact/Contact.html" class="section9-footer-left-list-item">Contact</a></li>
+                    <li> <a href="/About_Us-PAGE/about.html" class="section9-footer-left-list-item">About</a></li>
+                    <li> <a href="/ProductCompare/productcomp.html" class="section9-footer-left-list-item">Compare
+                            Products</a></li>
+                </ul>
+            </div>
+            <div id="section9-footer-center-belowthelogo">
+                <div id="footer-logo-text">
+                    <h1>JensonDecor</h1>
+                    <h6>Transforming Spaces, Inspiring Lives</h6>
+                </div>
+                <div id="footer-copyright-container">
+                    <h5 id="footer-short-about-and-copyright-animation"> Elevate your space with our curated collection
+                        of metal wall art, wallpapers, photo frames, mirrors, wall shelves, and whimsical wall-mounted
+                        animals. Where creativity meets craftsmanship.</h5>
+                    <h5 style="margin-top: 10px;" id="footer-short-about-and-copyright-animation"> © JensorDecor. 2023
+                    </h5>
+                </div>
+
+            </div>
+
+
+            <div id="section9-footer-right">
+
+                <ul id="footer-navigation-menu">
+                    <li> <a href="https://www.facebook.com/" class="section9-footer-right-list-item">Facebook</a></li>
+                    <li> <a href="https://www.instagram.com/" class="section9-footer-right-list-item">Instagram </a>
+                    </li>
+                    <li> <a href="https://pk.linkedin.com/" class="section9-footer-right-list-item">Linkdin</a></li>
+                    <li> <a href="https://www.youtube.com/" class="section9-footer-right-list-item">YouTube</a></li>
+                    <li> <a href="https://twitter.com/" class="section9-footer-right-list-item">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+"></script>
+    <script src="script-homepage.js"></script>
+    <script src="sp_nav-bar-script.js"></script>
+    <script src="nav-menu-script-cstm.js"></script>
+    <!-- Footer custom-animation-script -->
+    <script src="home-footer-script-cstm.js"></script>
+</body>
+
+
+
+</html>

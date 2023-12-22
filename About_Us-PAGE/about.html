@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about_cstm_stl.css">
+    <link rel="stylesheet" href="style-Home-Nav.css">
+    <link rel="stylesheet" href="home-footer-style-cstm-stl.css">
+    <link rel="stylesheet" href="cstm-Menu.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+        <!-- NAV-BAR-STARTS HERE -->
+    <nav id="mainnav">
+        <div class="main-home-logo">
+            <div class="home-logo">
+                <a href="/HomePage-Jenson Decor/index.html">
+                    <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo-with text.svg" alt="" id="logo-with-text">
+                    <img src="/HomePage-Jenson Decor/Assets/Jensen Decor-Logo only.svg" alt="" id="logo-without-text"
+                        class="not-active-logo-cstm">
+                </a>
+            </div>
+        </div>
+        <div id="nav-menu-main">
+            <div id="nav-menu" class=" fixed-menu-navbar-custm">
+                <div id="quick-navi-pages">
+                    <ul>
+                        <li><a href="/Offers_page/offers.html" class="a-flex">Offers</a></li>
+                        <li><a href="/Contact/Contact.html" class="a-flex">Contact</a></li>
+                        <li><a href="/SHOP-page/shop.html" class="a-flex">Shop</a></li>
+                    </ul>
+                </div>
+                <div id="main-menu-container">
+                    <div id="menu-container">
+                        <div id="hamburger-menu" onclick="menu_open()">
+                            <span class="a-flex"><img src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-hamburger.svg"
+                                    alt="">
+                                <h6>Menu</h6>
+                            </span>
+                        </div>
+
+                        <span class="a-flex " onclick="open_cart()"><img
+                                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-cart.svg" alt=""></span>
+
+                        <a href="/HomePage-Jenson Decor/login-signup/signin.html" class="a-flex"> <img
+                                src="/HomePage-Jenson Decor/Assets/icons/Nav-Icons-loginsvg.svg" alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV-MENU-STARTS HERE -->
+    <div id="menu-parent-container">
+
+        <div id="menu-container-cstm">
+            <div class="menu-left-container">
+                <div class="menu-left-child-left">
+                    <ul>
+                        <h4>Follow Us</h4>
+                        <li><a href="https://www.facebook.com/" class="menu-socialmedia-list-stl">Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=en" class="menu-socialmedia-list-stl">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/" class="menu-socialmedia-list-stl">YouTube</a></li>
+                        <li><a href="https://www.instagram.com/" class="menu-socialmedia-list-stl">Instagram</a></li>
+                        <li><a href="https://pk.linkedin.com/" class="menu-socialmedia-list-stl">linkedin</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-left-child-right">
+                    <ul>
+                        <h4>Search By Category</h4>
+                        <li><a href="/SHOP-page/Shop-metal-wall-decor.html" class="menu-category-list-stl">Metal wall
+                                art </a></li>
+                        <li><a href="/SHOP-page/Shop-wallpaper.html" class="menu-category-list-stl">Wall papers </a>
+                        </li>
+                        <li><a href="/SHOP-page/Shop-photoframe-art.html" class="menu-category-list-stl">Photo frame art
+                            </a></li>
+                        <li><a href="/SHOP-page/Shop-MirrorART.html" class="menu-category-list-stl">Mirror art</a></li>
+                        <li><a href="/SHOP-page/Shop-Wallshelves.html" class="menu-category-list-stl">Wall shelves </a>
+                        </li>
+                        <li><a href="/SHOP-page/Shop-Wall-mounted-animals.html" class="menu-category-list-stl">Wall
+                                mounted animals </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-right-container">
+                <a href="/HomePage-Jenson Decor/index.html">
+                    <h1 id="menu_headings_home">HOME</h1>
+                </a>
+                <a href="/SHOP-page/shop.html">
+                    <h1 id="menu_headings_home">SHOP</h1>
+                </a>
+                <a href="/About_Us-PAGE/about.html">
+                    <h1 id="menu_headings_home">ABOUT</h1>
+                </a>
+                <a href="/Offers_page/offers.html">
+                    <h1 id="menu_headings_home">OFFERS</h1>
+                </a>
+                <a href="/Contact/Contact.html">
+                    <h1 id="menu_headings_home">CONTACT</h1>
+                </a>
+                <a href="/ProductCompare/productcomp.html">
+                    <h1 id="menu_headings_home">COMPARE PRODUCTS</h1>
+                </a>
+            </div>
+        </div>
+        <span id="menu-close-button" onclick="menu_close()"><img
+                src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+    </div>
+    <!-- NAV-CART-END HERE -->
+    <div id="cart-parent-container">
+
+
+        <div id="cart-container">
+
+            <span id="cart-close-button" onclick="close_cart()"><img
+                    src="/HomePage-Jenson Decor/Assets/Close-cross-icon-01.svg" alt=""></span>
+
+            <div id="cart-content">
+                <h2>Your Cart</h2>
+
+                <div id="product-cart-item">
+
+                    <span class="product-cart-item-image"><img
+                            src="/HomePage-Jenson Decor/Assets/cart-demo-product-image-01.jpg" alt=""></span>
+
+                    <div class="product-cart-item-content">
+                        <div class="product-cart-item-heading"></div>
+                        <div class="product-cart-item-details"></div>
+                    </div>
+
+                </div>
+                <h5>Your cart is empty</h5>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- NAV-BAR-ENDS HERE -->
+
+
+    <section id="section1_parent_container">
+
+        <div class="section1_container">
+
+            <div id="section1_heading_container">
+                <h1 id="section1_about_heading">About</h1>
+            </div>
+
+            <div class="section1_landingimage_container">
+
+                <img src="/HomePage-Jenson Decor/Homepage-Slider-images/animal wall decor-edited-test.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="section2_parent_container">
+
+        <div class="section2_container">
+
+            <div class="Short_intro_top">
+                <h6>SHORT</h6>
+                <h1>Introduction</h1>
+            </div>
+
+            <div class="Short_intro_center">
+
+                <p>Welcome to the enchanting world of Jenson Decor, where we seamlessly blend imaginative design with
+                    meticulous craftsmanship to redefine your living spaces. Step into a realm of artistic expression as
+                    you peruse our carefully curated collection.<br>
+
+                    Discover the allure of our exquisite metal wall art, where every piece tells a story through
+                    intricate detailing and expert craftsmanship. Immerse yourself in the rich textures and captivating
+                    designs that adorn each creation, transforming your walls into a gallery of sophistication.<br>
+
+                    Indulge in the luxury of our stylish wallpapers, meticulously chosen to reflect the latest trends
+                    and timeless elegance. From bold patterns to subtle textures, our wallpapers provide a backdrop that
+                    sets the tone for your unique style.<br>
+
+                    Elevate your memories with our unique photo frame art, where each frame is a work of art in itself.
+                    Crafted with precision and an eye for detail, these frames not only showcase your cherished moments
+                    but also add a touch of sophistication to your space.<br>
+
+                   </p>
+
+            </div>
+
+            <div class="Short_intro_bottom">
+                <h1>Introduction</h1>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+<section id="section3_about_parent_container">
+
+
+    <div class="section3_about_left_container">
+
+        <div class="about_images_container">
+            <img src="/About_Us-PAGE/about_image1.jpg" alt="" id="about_images_container_image1">
+
+            <img src="/About_Us-PAGE/about_image2.jpg" alt="" id="about_images_container_image2">
+        </div>
+
+    </div>
+    <div class="section3_about_right_container">
+<h4>About Us </h4>
+
+<p>At Jenson Decor, we believe that your living spaces should reflect your individuality and style. Founded with a passion for transforming houses into homes, we curate a diverse range of premium decor items to inspire and elevate your surroundings.<br>
+    Our commitment to quality craftsmanship is evident in every piece we offer, from intricately designed metal wall art to eye-catching wallpapers that redefine your walls. We understand the importance of personal expression, and our collection includes photo frame art that captures cherished moments, mirrors that add sophistication, and wall-mounted animals that bring a touch of whimsy.<br>
+    We strive for excellence in both design and functionality, offering not just products, but statements that resonate with your unique taste. Whether you're seeking a statement piece or subtle accents, Jenson Decor is your destination for elevating your living spaces with timeless elegance and contemporary flair.<br>
+    Join us on a journey to transform your surroundings into a reflection of your personality. 
+    <br>
+    At Jenson Decor, every item is a testament to our dedication to artistry, innovation, and creating spaces that feel uniquely yours.
+    </p>
+    </div>
+
+</section>
+    
+
+   <!-- |
+    |
+    |
+   \|/ -->
+    <!-- section-9-FOOTER-STARTS HERE -->
+    <div id="section9-footer-parent">
+        <div id="section9-footer-container">
+
+
+            <div id="section9-footer-left">
+                <ul id="footer-navigation-menu">
+                    <li> <a href="/HomePage-Jenson Decor/index.html" class="section9-footer-left-list-item">Home</a>
+                    </li>
+                    <li> <a href="/SHOP-page/shop.html" class="section9-footer-left-list-item">Shop</a></li>
+                    <li> <a href="/Contact/Contact.html" class="section9-footer-left-list-item">Contact</a></li>
+                    <li> <a href="/About_Us-PAGE/about.html" class="section9-footer-left-list-item">About</a></li>
+                    <li> <a href="/ProductCompare/productcomp.html" class="section9-footer-left-list-item">Compare
+                            Products</a></li>
+                </ul>
+            </div>
+            <div id="section9-footer-center-belowthelogo">
+                <div id="footer-logo-text">
+                    <h1>JensonDecor</h1>
+                    <h6>Transforming Spaces, Inspiring Lives</h6>
+                </div>
+                <div id="footer-copyright-container">
+                    <h5 id="footer-short-about-and-copyright-animation"> Elevate your space with our curated collection
+                        of metal wall art, wallpapers, photo frames, mirrors, wall shelves, and whimsical wall-mounted
+                        animals. Where creativity meets craftsmanship.</h5>
+                    <h5 style="margin-top: 10px;" id="footer-short-about-and-copyright-animation"> © JensorDecor. 2023
+                    </h5>
+                </div>
+
+            </div>
+
+
+            <div id="section9-footer-right">
+
+                <ul id="footer-navigation-menu">
+                    <li> <a href="https://www.facebook.com/" class="section9-footer-right-list-item">Facebook</a></li>
+                    <li> <a href="https://www.instagram.com/" class="section9-footer-right-list-item">Instagram </a>
+                    </li>
+                    <li> <a href="https://pk.linkedin.com/" class="section9-footer-right-list-item">Linkdin</a></li>
+                    <li> <a href="https://www.youtube.com/" class="section9-footer-right-list-item">YouTube</a></li>
+                    <li> <a href="https://twitter.com/" class="section9-footer-right-list-item">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="sp_nav-bar-script.js"></script>
+<script src="nav-menu-script-cstm.js"></script>
+<!-- Footer custom-animation-script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+"></script>
+    <script src="About_cstm_script.js"></script>
+    <script src="About-footer-script-cstm.js"></script>
+</body>
+
+</html>

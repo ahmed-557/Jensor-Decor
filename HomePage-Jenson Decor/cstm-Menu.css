@@ -1,0 +1,217 @@
+:root {
+    --bg-colour: #f4f4f4;
+    --content-colour: #262626;
+    --box-colour: #eaeaea;
+    --white: white;
+    --swiper-navigation-color: black !important;
+    --swiper-theme-color: black !important;
+    --swiper-pagination-color: rgb(255, 252, 252) ! important;
+}
+
+#menu-parent-container {
+    width: 100vw;
+    background-color: var(--content-colour);
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    opacity: 0;
+    top: -150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#menu-container-cstm {
+    display: flex;
+    width: 90%;
+    /* background-color: bisque; */
+    justify-content: space-between;
+    height: 90%;
+}
+
+#menu-close-button {
+    background-color: var(--bg-colour);
+    width: 2.5vw;
+    height: 2.5vw;
+    padding: 9px;
+    align-self: flex-start;
+    margin-top: 1.7%;
+    border-radius: 25px;
+}
+
+#menu-close-button:hover {
+    scale: 1.2;
+    box-shadow: black 5px 5px 2px;
+    transition: 500ms;
+}
+
+.menu-left-container {
+    height: 30%;
+    align-self: flex-end;
+    width: 30%;
+    display: flex;
+    background-color: transparent;
+    /* border: #262626 2px solid; */
+    justify-content: space-between;
+}
+
+.menu-left-child-left,
+.menu-left-child-right {
+    background-color: transparent;
+}
+
+.menu-left-child-left ul li,
+.menu-left-child-right ul li {
+    margin-top: 5px;
+    list-style-type: none;
+    background-color: transparent;
+}
+
+.menu-left-child-left ul h4,
+.menu-left-child-right ul h4 {
+    color: var(--bg-colour);
+}
+
+.menu-socialmedia-list-stl,
+.menu-category-list-stl {
+    font-size: 9pt;
+    text-decoration: none;
+    color: var(--bg-colour);
+    /* color: var(--bg-colour); */
+
+}
+
+.menu-right-container {
+    height: 80%;
+    width: 30%;
+    align-self: center;
+    /* border: #ec0000 2px solid; */
+    background-color: transparent;
+}
+
+.menu-right-container a {
+    text-decoration: none;
+}
+
+.menu-right-container h1 {
+    text-align: right;
+    font-size: 3vw;
+    margin-top: 8%;
+    background-color: transparent;
+    line-height: .9em;
+    color: var(--bg-colour);
+}
+
+.menu-right-container h1:hover {
+    text-shadow: 5px 5px 2px black;
+}
+
+
+/* cart-Container */
+
+#cart-parent-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0%;
+    right: -100%;
+    justify-content: right;
+    /* background-color: rgba(0, 0, 255, 0.431) */
+}
+
+#cart-container {
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    background-color: var(--box-colour);
+    display: flex;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+#cart-close-button{
+    align-self: flex-end;
+    margin-top: 3%;
+    margin-right: 9%;
+}
+
+#cart-close-button img{
+width: 2.3vw;
+height: 2.3vw;
+background-color: var(--white);
+border-radius: 25px;
+padding: 5px;
+}
+
+#cart-close-button:hover{
+
+    scale:1.2;
+    transition:500ms
+}
+
+#cart-container h5{
+font-weight: 400;
+    margin-top: 30%;
+    text-align: center;
+}
+
+
+#cart-content {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#cart-content h2 {
+    font-size: 13pt;
+    font-weight: 500;
+    text-align: center;
+}
+
+#product-cart-item{
+    border-top: 1px solid rgb(211, 211, 211);
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+    height: 20%;
+    /* background-color: rgb(191, 255, 0); */
+}
+.product-cart-item-image{
+    width: 30%;
+}
+.product-cart-item-image img{
+    width: 100%;
+    opacity: 50%;
+}
+
+
+.product-cart-item-content{
+    /* background-color: rgb(255, 221, 0); */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-cart-item-heading{
+    height: 20px;
+    width: 80%;
+    background-color: var(--bg-colour);
+}
+.product-cart-item-details{
+    height: 40px;
+    margin-top: 10px;
+    width: 80%;
+    background-color: var(--bg-colour);
+}

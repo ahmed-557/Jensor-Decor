@@ -1,0 +1,228 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-colour);
+}
+
+:root {
+    --bg-colour: #f4f4f4;
+    --content-colour: #262626;
+    --box-colour: #eaeaea;
+    --white: white;
+    --swiper-navigation-color: black !important;
+    --swiper-theme-color: black !important;
+    --swiper-pagination-color: rgb(255, 252, 252) ! important;
+}
+
+.section1_container {
+    width: 100vw;
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#section1_heading_container {
+
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.section1_container h1 {
+    font-size: 14vw;
+    position: relative;
+    margin: 0px;
+    font-weight: 600;
+    transform: translateY(0px);
+
+}
+
+.section2_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.section1_landingimage_container {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    /* transform: translateY(-130px); */
+    align-items: center;
+
+}
+
+.section1_landingimage_container img {
+    position: relative;
+    margin: auto;
+    filter: grayscale(100%);
+    opacity: 80%;
+    transform: translateY(400px);
+    width: 60vw;
+}
+
+
+#section2_parent_container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2_container {
+    background-color: #c2c2c2;
+
+overflow: hidden;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.Short_intro_top {
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+align-items: center;
+flex-direction: column;
+overflow: hidden;
+    height: 50%;
+   top: 0px;
+   z-index: 2;
+background-color: var(--bg-colour);
+}
+.Short_intro_top h1, .Short_intro_bottom h1 {
+
+    font-size: 11vw;
+    margin: 0px;
+    line-height: 0em;
+    text-align: center;
+
+    letter-spacing: -5px;
+}
+
+.Short_intro_top h6 {
+    font-size: 2vw;
+    line-height: 7em;
+    text-align: center;
+    letter-spacing: 20px;
+    font-weight: 400;
+}
+
+.Short_intro_center{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+    background-color: var(--content-colour);
+    height: 100%;
+}
+.Short_intro_center P{
+    color: var(--bg-colour);
+    text-align: center;
+    font-size: 14pt;
+    line-height: 2em;
+    width: 60%;
+    font-weight: 300;
+}
+
+
+
+
+
+.Short_intro_bottom {
+    z-index: 2;
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--bg-colour);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: start;
+align-items: center;
+flex-direction: column;
+
+    width: 100%;
+    height: 50%;
+
+}
+
+
+/* Section3 */
+
+#section3_about_parent_container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    height: 100vh;
+}
+.section3_about_left_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+.about_images_container{
+
+    width: 80%;
+    margin-top: -25%;
+  
+}
+.about_images_containe img{
+    scale:.8;
+}
+
+#about_images_container_image1{
+    width: 19vw;
+}
+#about_images_container_image2{
+    width: 19vw;
+    position: absolute;
+  margin-left: -7%;
+  border: white 5px solid; 
+  margin-top: 10%;
+}
+.section3_about_right_container{
+width: 56%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.section3_about_right_container h4{
+    opacity: .5;
+color: var(--content-colour);
+    font-size: 18pt;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+.section3_about_right_container p{
+    margin-top: 10px;
+
+    color: var(--content-colour);
+opacity: .5;
+    width: 90%;
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.4em;
+}
